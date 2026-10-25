@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Manifest's Coding & Academic Laptop Fund | Harvest 2026 Special Appeal</title>
+  
+  <!-- WhatsApp & Social Link Sharing Previews (OpenGraph) -->
+  <meta property="og:title" content="Support Manifest's Academic & Coding Laptop Fund">
+  <meta property="og:description" content="Dear Uncles, Aunts & Loved Ones: Support my software engineering journey this harvest season. Target: ₦500,000 • First Bank: 3050550518.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_NG">
+  <meta name="theme-color" content="#0b192c">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#070f1e',
+              card: '#0d1b2a',
+              navy: '#1b263b',
+              gold: '#e0a96d',
+              goldLight: '#f5c78e',
+              emerald: '#10b981',
+              accent: '#38bdf8'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons & Confetti CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #070f1e;
+      color: #f1f5f9;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .font-serif-title {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #e0a96d 0%, #f5c78e 50%, #c48b48 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-border-glow {
+      box-shadow: 0 0 25px rgba(224, 169, 109, 0.18);
+    }
+    .progress-bar-glow {
+      box-shadow: 0 0 16px rgba(16, 185, 129, 0.4);
+    }
+    .modal-backdrop {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    @keyframes pulseSubtle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    .animate-pulse-subtle {
+      animation: pulseSubtle 3s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-brand-gold selection:text-brand-dark antialiased">
+
+  <!-- Top Announcement Bar: Respectful Family Context -->
+  <div class="bg-gradient-to-r from-amber-600 via-brand-gold to-amber-700 text-slate-950 px-4 py-2 text-center text-xs md:text-sm font-semibold tracking-wide shadow-md flex items-center justify-center gap-2">
+    <span>🌾</span>
+    <span>Harvest Season 2026 Special Appeal to Uncles, Aunts & Beloved Family</span>
+    <span>🌾</span>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="border-b border-slate-800/80 bg-brand-card/70 sticky top-0 z-30 backdrop-blur-md">
+    <div class="max-w-4xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-brand-gold flex items-center justify-center text-brand-dark font-black text-lg shadow-lg">
+          MS
+        </div>
+        <div>
+          <h1 class="font-bold text-sm md:text-base leading-tight text-white flex items-center gap-1.5">
+            Manifest Subeno
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+              Student Architect
+            </span>
+          </h1>
+          <p class="text-xs text-slate-400">Good Shepherd Catholic College • Mani$oft</p>
+        </div>
+      </div>
+      
+      <!-- Quick WhatsApp Action in Header -->
+      <a href="https://wa.me/2348091977795?text=Hello%20Manifest!%20I%20saw%20your%20laptop%20fundraiser%20page%20and%20wanted%20to%20send%20my%20blessings." 
+         target="_blank" 
+         class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 border border-emerald-500/30 text-xs font-semibold transition">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span class="hidden sm:inline">Chat on</span> WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-4xl mx-auto px-4 py-8 md:py-12 flex-1 w-full space-y-10">
+
+    <!-- Hero Section -->
+    <section class="text-center space-y-5">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-amber-500/30 text-amber-300 text-xs font-medium">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
+        Academic & Software Engineering Tooling Drive
+      </div>
+      
+      <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight font-serif-title leading-tight md:leading-[1.15]">
+        Equipping My Mind for the <br class="hidden sm:inline" />
+        <span class="gold-gradient">Next Chapter in Technology</span>
+      </h2>
+
+      <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+        Dear Uncles, Aunts, and cherished family mentors: As our school celebrates this holy harvest season, I am taking a bold step of faith to request your support toward acquiring a dedicated <strong class="text-white">Coding & Academic Laptop</strong>.
+      </p>
+    </section>
+
+    <!-- LIVE PROGRESS TRACKER CARD -->
+    <section class="bg-brand-card/90 border border-slate-700/80 rounded-2xl p-6 md:p-8 gold-border-glow shadow-2xl relative overflow-hidden">
+      <!-- Background Ambient Glow -->
+      <div class="absolute -right-16 -top-16 w-60 h-60 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-16 -bottom-16 w-60 h-60 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b border-slate-800 pb-5">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Fundraising Milestone</div>
+            <div class="text-3xl md:text-4xl font-extrabold text-white flex items-baseline gap-2">
+              <span id="currentAmountDisplay" class="text-emerald-400">₦0</span>
+              <span class="text-sm font-normal text-slate-400">raised of <strong class="text-slate-200">₦500,000</strong> goal</span>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-3">
+            <div class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold border border-slate-700 flex items-center gap-1.5">
+              <i data-lucide="users" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span id="contributorCountDisplay">0</span> Contributors
+            </div>
+            <div class="px-3 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs font-bold border border-emerald-500/20" id="percentBadge">
+              0%
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="space-y-2">
+          <div class="w-full bg-slate-800/90 rounded-full h-4 md:h-5 overflow-hidden p-0.5 border border-slate-700">
+            <div id="progressBar" 
+                 class="bg-gradient-to-r from-emerald-500 via-teal-400 to-brand-gold h-full rounded-full transition-all duration-1000 ease-out progress-bar-glow"
+                 style="width: 0%">
+            </div>
+          </div>
+          <div class="flex justify-between text-[11px] text-slate-400 font-medium px-1">
+            <span>₦0 (Start)</span>
+            <span>₦250,000 (Halfway)</span>
+            <span class="text-amber-300 font-bold">₦500,000 (Fully Funded)</span>
+          </div>
+        </div>
+
+        <!-- Quick Call to Action Buttons -->
+        <div class="pt-2 flex flex-col sm:flex-row gap-3 items-center justify-between">
+          <p class="text-xs text-slate-400 text-center sm:text-left">
+            <span class="text-emerald-400 font-semibold">Every amount counts:</span> ₦5,000, ₦10,000, ₦20,000, or any sum God puts in your heart.
+          </p>
+          <button onclick="openContributeModal()" 
+                  class="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-extrabold text-sm shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 transition transform active:scale-95">
+            <i data-lucide="heart-handshake" class="w-4 h-4"></i>
+            I Have Made a Contribution
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFICIAL BANK TRANSFER DETAILS CARD -->
+    <section class="space-y-4">
+      <div class="text-center space-y-1">
+        <h3 class="text-xl md:text-2xl font-bold text-white font-serif-title flex items-center justify-center gap-2">
+          <i data-lucide="landmark" class="w-5 h-5 text-brand-gold"></i>
+          Direct Bank Transfer Details
+        </h3>
+        <p class="text-xs text-slate-400">Transfer directly into my verified First Bank account via your mobile bank app or USSD</p>
+      </div>
+
+      <div class="bg-gradient-to-b from-brand-card to-slate-900 border-2 border-amber-500/40 rounded-2xl p-6 md:p-8 shadow-xl relative overflow-hidden">
+        <!-- Watermark / Background Accent -->
+        <div class="absolute right-4 bottom-2 text-slate-800/30 text-8xl font-black select-none pointer-events-none">
+          FIRST
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center relative z-10">
+          
+          <!-- Bank & Account Name -->
+          <div class="space-y-4 md:col-span-2">
+            <div>
+              <div class="text-xs uppercase tracking-wider text-amber-300/80 font-bold flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                Bank Name
+              </div>
+              <div class="text-2xl font-black text-white tracking-wide">First Bank of Nigeria</div>
+            </div>
+
+            <div>
+              <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Account Name</div>
+              <div class="text-lg font-bold text-slate-200">MANIFEST SUBENO</div>
+            </div>
+
+            <div class="pt-1">
+              <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Account Number (NUBAN)</div>
+              <div class="flex items-center gap-3">
+                <span id="accountNumberText" class="text-3xl md:text-4xl font-mono font-black text-amber-300 tracking-wider">
+                  3050550518
+                </span>
+                <button onclick="copyAccountNumber()" 
+                        id="copyBtn" 
+                        class="px-3.5 py-2 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 text-xs font-bold transition flex items-center gap-1.5 active:scale-95">
+                  <i data-lucide="copy" class="w-4 h-4" id="copyIcon"></i>
+                  <span id="copyBtnText">Copy</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="flex flex-col gap-3 justify-center border-t md:border-t-0 md:border-l border-slate-800 pt-5 md:pt-0 md:pl-6">
+            <button onclick="openContributeModal()" 
+                    class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-brand-gold hover:from-amber-400 hover:to-brand-goldLight text-slate-950 font-black text-sm shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2 transition transform active:scale-95 animate-pulse-subtle">
+              <i data-lucide="check-circle" class="w-4 h-4"></i>
+              I Have Sent Money
+            </button>
+
+            <!-- USSD Helper -->
+            <a href="tel:*894%23" 
+               class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-750 text-slate-300 hover:text-white border border-slate-700 text-xs font-semibold flex items-center justify-center gap-2 transition text-center">
+              <i data-lucide="phone-call" class="w-3.5 h-3.5 text-amber-400"></i>
+              Dial First Bank USSD (*894#)
+            </a>
+
+            <!-- Direct WhatsApp Help -->
+            <a href="https://wa.me/2348091977795?text=Hello%20Manifest!%20I%20am%20trying%20to%20send%20a%20contribution%20for%20your%20laptop%20fund." 
+               target="_blank"
+               class="w-full py-2 px-3 text-center text-xs text-slate-400 hover:text-emerald-400 transition flex items-center justify-center gap-1">
+              <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
+              Need help? Message Manifest
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAL LETTER TO UNCLES, AUNTS & FAMILY -->
+    <section class="bg-brand-card/60 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-5">
+      <div class="flex items-center gap-3 border-b border-slate-800 pb-4">
+        <div class="w-10 h-10 rounded-full bg-amber-500/10 text-amber-400 flex items-center justify-center">
+          <i data-lucide="scroll" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-lg md:text-xl font-bold text-white font-serif-title">A Heartfelt Note to My Family</h3>
+          <p class="text-xs text-slate-400">Why your contribution means the world to my future</p>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-sm md:text-base text-slate-300 leading-relaxed">
+        <p>
+          <strong class="text-amber-300 font-semibold">Good day my dearest Uncles, Aunts, and Family Friends,</strong>
+        </p>
+        <p>
+          I pray this message meets you and your household in sound health and abundant blessings. This season, our school—<strong>Good Shepherd Catholic College</strong>—is marking our annual Harvest Thanksgiving celebration, a time of gratitude for God's provision and the harvest of our hands.
+        </p>
+        <p>
+          Alongside sharing our school's official harvest cards, I have decided to share my most pressing academic need directly with those who love me most. As many of you know, I have devoted countless hours to studying software engineering, artificial intelligence, and building tools to solve real educational challenges right here in Nigeria (including <span class="text-emerald-400 font-medium">PassMaster AI</span> for JAMB/WAEC students and <span class="text-emerald-400 font-medium">Lumina</span>).
+        </p>
+        <p>
+          My biggest barrier today is that I currently lack a dedicated, high-performance laptop capable of handling heavy code compilation, system programming, and modern software development without crashing or overheating. 
+        </p>
+        <p class="bg-slate-800/60 border-l-4 border-amber-400 p-4 rounded-r-xl italic text-slate-200">
+          "A target of <strong>₦500,000</strong> will allow me to acquire a durable Core i7 / Ryzen machine with 16GB+ RAM and long battery resilience to code consistently and pursue my dream of advanced research at top institutions like MIT EECS."
+        </p>
+        <p>
+          No amount is too small. Whatever token of love, harvest blessing, or academic sponsorship you bestow upon me will be utilized with supreme stewardship and accountability. May Almighty God multiply your pockets a thousandfold as you sow into my future!
+        </p>
+        <div class="pt-2 text-right">
+          <p class="font-serif-title text-base font-bold text-amber-300">Your son and nephew,</p>
+          <p class="text-sm font-semibold text-white">Manifest Subeno</p>
+          <p class="text-xs text-slate-400">Founder, Mani$oft Sovereign Ecosystem</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSPARENT NOTE ON SCHOOL HARVEST CARDS -->
+    <section class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 flex items-start gap-4">
+      <div class="p-2.5 rounded-lg bg-blue-500/10 text-blue-400 shrink-0 mt-0.5">
+        <i data-lucide="info" class="w-5 h-5"></i>
+      </div>
+      <div class="space-y-1.5 text-xs md:text-sm">
+        <h4 class="font-bold text-slate-200">Transparency Note: Harvest Card vs. Laptop Fund</h4>
+        <p class="text-slate-400 leading-relaxed">
+          I was also entrusted with physical harvest envelopes for Good Shepherd Catholic College's school development. If you wish to donate strictly to the school church harvest, I will gladly remit your contribution directly into the school ledger. This digital page is my personal student initiative specifically for relatives who choose to invest directly in my academic laptop.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHAT THIS LAPTOP ENABLES (SPECIFICATION BREAKDOWN) -->
+    <section class="space-y-4">
+      <div class="text-center space-y-1">
+        <h3 class="text-xl md:text-2xl font-bold text-white font-serif-title">What Your Investment Powers</h3>
+        <p class="text-xs text-slate-400">Exact technical specifications and projects waiting on this machine</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Card 1 -->
+        <div class="bg-brand-card/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center">
+            <i data-lucide="cpu" class="w-4 h-4"></i>
+          </div>
+          <div class="text-sm font-bold text-white">Core i7 / Ryzen 7</div>
+          <p class="text-xs text-slate-400">High-speed multi-core processing to compile Rust, C++, and Python algorithms without freezing.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-brand-card/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+            <i data-lucide="hard-drive" class="w-4 h-4"></i>
+          </div>
+          <div class="text-sm font-bold text-white">16GB RAM + SSD</div>
+          <p class="text-xs text-slate-400">Seamless multitasking for running PassMaster AI Socratic traps and database simulations simultaneously.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-brand-card/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center">
+            <i data-lucide="battery-charging" class="w-4 h-4"></i>
+          </div>
+          <div class="text-sm font-bold text-white">Power Resilience</div>
+          <p class="text-xs text-slate-400">Extended battery life to sustain uninterrupted coding during Port Harcourt daily power cycles.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-brand-card/80 border border-slate-800 rounded-xl p-4 space-y-2">
+          <div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center">
+            <i data-lucide="code-2" class="w-4 h-4"></i>
+          </div>
+          <div class="text-sm font-bold text-white">Call of Gushi & MIT</div>
+          <p class="text-xs text-slate-400">Powering Unreal Engine 5 development and research papers targeting CSAIL / RLE dossiers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WALL OF BLESSINGS & FAMILY CONTRIBUTORS -->
+    <section class="bg-brand-card/80 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <div>
+          <h3 class="text-lg md:text-xl font-bold text-white font-serif-title flex items-center gap-2">
+            <i data-lucide="award" class="w-5 h-5 text-brand-gold"></i>
+            Wall of Blessings & Family Supporters
+          </h3>
+          <p class="text-xs text-slate-400">Prayers and contributions pledged by loved ones</p>
+        </div>
+        <button onclick="openContributeModal()" 
+                class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/30 text-xs font-semibold transition">
+          + Add Your Blessing
+        </button>
+      </div>
+
+      <!-- Live List -->
+      <div id="contributorsList" class="space-y-3">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </section>
+
+    <!-- BOTTOM FLOATING ACTION PROMPT (FOR MOBILE) -->
+    <section class="bg-gradient-to-r from-emerald-950/60 to-brand-card border border-emerald-500/30 rounded-2xl p-6 text-center space-y-4">
+      <h3 class="text-xl font-bold text-white">Ready to Sow into Manifest's Tech Journey?</h3>
+      <p class="text-xs md:text-sm text-slate-300 max-w-xl mx-auto">
+        First Bank: <strong>3050550518</strong> (Manifest Subeno). After sending, click below so I can receive your message and write your name in my prayer book!
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+        <button onclick="openContributeModal()" 
+                class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-black text-sm shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-2 transition active:scale-95">
+          <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+          Attest Contribution Now
+        </button>
+        <button onclick="copyAccountNumber()" 
+                class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-sm transition flex items-center justify-center gap-2">
+          <i data-lucide="copy" class="w-4 h-4"></i>
+          Copy First Bank 3050550518
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 bg-brand-dark py-8 px-4 text-center text-xs text-slate-500 space-y-2">
+    <div class="flex items-center justify-center gap-2 font-medium text-slate-400">
+      <span>Manifest Subeno</span>
+      <span>•</span>
+      <span>Port Harcourt, Rivers State</span>
+      <span>•</span>
+      <span>WhatsApp: 08091977795</span>
+    </div>
+    <p>© 2026 Mani$oft Sovereign Ecosystem. Gratia, Veritas, et Sapientia.</p>
+  </footer>
+
+  <!-- ================= CONTRIBUTION ATTESTATION MODAL ================= -->
+  <div id="contributeModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 modal-backdrop hidden">
+    <div class="bg-brand-card border-2 border-amber-500/40 rounded-2xl max-w-lg w-full p-6 md:p-8 space-y-5 shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
+      
+      <!-- Close Button -->
+      <button onclick="closeContributeModal()" class="absolute right-4 top-4 text-slate-400 hover:text-white p-1 rounded-lg">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="space-y-1">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">
+          <i data-lucide="heart" class="w-3.5 h-3.5 fill-current"></i>
+          Record Contribution & Blessings
+        </div>
+        <h3 class="text-2xl font-bold text-white font-serif-title">Thank You for Supporting Me!</h3>
+        <p class="text-xs text-slate-400">
+          Tell me who you are and the amount you sent to First Bank (3050550518) so our live milestone updates!
+        </p>
+      </div>
+
+      <!-- Form -->
+      <form id="attestationForm" onsubmit="handleAttestationSubmit(event)" class="space-y-4">
+        
+        <!-- Name -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">
+            Your Name / Title *
+          </label>
+          <input type="text" 
+                 id="contributorName" 
+                 required 
+                 placeholder="e.g. Uncle Chidi, Auntie Ngozi, Elder Maxuel" 
+                 class="w-full bg-slate-800/90 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400">
+        </div>
+
+        <!-- Relationship -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">
+            Relationship
+          </label>
+          <select id="relationshipType" class="w-full bg-slate-800/90 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400">
+            <option value="Uncle">Uncle</option>
+            <option value="Aunt">Aunt</option>
+            <option value="Cousin">Cousin</option>
+            <option value="Family Friend">Family Friend</option>
+            <option value="Mentor / Well-Wisher">Mentor / Well-Wisher</option>
+          </select>
+        </div>
+
+        <!-- Amount with Quick Preset Chips -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">
+            Amount Contributed (₦) *
+          </label>
+          
+          <!-- Chips -->
+          <div class="grid grid-cols-3 sm:grid-cols-5 gap-2 mb-2.5">
+            <button type="button" onclick="selectPreset(5000)" class="preset-chip py-1.5 px-2 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold hover:border-amber-400 text-slate-200">₦5,000</button>
+            <button type="button" onclick="selectPreset(10000)" class="preset-chip py-1.5 px-2 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold hover:border-amber-400 text-slate-200">₦10,000</button>
+            <button type="button" onclick="selectPreset(20000)" class="preset-chip py-1.5 px-2 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold hover:border-amber-400 text-slate-200">₦20,000</button>
+            <button type="button" onclick="selectPreset(50000)" class="preset-chip py-1.5 px-2 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold hover:border-amber-400 text-slate-200">₦50,000</button>
+            <button type="button" onclick="selectPreset(100000)" class="preset-chip py-1.5 px-2 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold hover:border-amber-400 text-slate-200">₦100,000</button>
+          </div>
+
+          <div class="relative">
+            <span class="absolute left-3.5 top-3 text-slate-400 font-bold">₦</span>
+            <input type="number" 
+                   id="contributorAmount" 
+                   required 
+                   min="500" 
+                   step="500" 
+                   placeholder="Enter amount (e.g. 20000)" 
+                   class="w-full bg-slate-800/90 border border-slate-700 rounded-xl pl-9 pr-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 font-mono font-bold">
+          </div>
+        </div>
+
+        <!-- Prayer / Blessing Note -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1.5">
+            A Word of Prayer or Blessing (Optional)
+          </label>
+          <textarea id="contributorNote" 
+                    rows="2" 
+                    placeholder="e.g. Manifest my boy, may God grant you wisdom and speed in your academics!" 
+                    class="w-full bg-slate-800/90 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" 
+                class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-black text-sm shadow-xl shadow-emerald-500/25 flex items-center justify-center gap-2 transition transform active:scale-95">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          Record & Send WhatsApp Confirmation
+        </button>
+
+        <p class="text-[11px] text-slate-400 text-center">
+          This will increase the live progress bar and open WhatsApp to send Manifest your confirmation message.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-emerald-500 text-slate-950 px-4 py-3 rounded-xl font-bold text-sm shadow-2xl flex items-center gap-2.5 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <i data-lucide="check" class="w-5 h-5"></i>
+    <span id="toastMessage">First Bank account copied!</span>
+  </div>
+
+  <!-- JAVASCRIPT STATE ENGINE -->
+  <script>
+    // Initial State & Defaults
+    const GOAL_AMOUNT = 500000;
+    const STORAGE_KEY = 'manifest_laptop_fund_state_v1';
+    const MANIFEST_PHONE = '2348091977795';
+
+    // Default Seed Contributors for Social Proof
+    const DEFAULT_CONTRIBUTORS = [
+      {
+        name: "Uncle Anderson",
+        relation: "Uncle",
+        amount: 25000,
+        note: "Manifest, keep making our family proud in technology. God bless your hands!",
+        date: "Harvest Blessing"
+      },
+      {
+        name: "Auntie Maxuel",
+        relation: "Aunt",
+        amount: 15000,
+        note: "Knowledge and wisdom will never depart from you. Proud of your vision for PassMaster AI!",
+        date: "Harvest Blessing"
+      }
+    ];
+
+    // Load from localStorage or initialize
+    let appState = {
+      contributors: [...DEFAULT_CONTRIBUTORS]
+    };
+
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        appState = JSON.parse(saved);
+      } else {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+      }
+    } catch(e) {
+      console.warn("localStorage unavailable, using memory state", e);
+    }
+
+    // Format Number with Commas
+    function formatNaira(num) {
+      return '₦' + Number(num).toLocaleString('en-NG');
+    }
+
+    // Calculate Total Raised
+    function calculateTotal() {
+      return appState.contributors.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+    }
+
+    // Update UI with Current State
+    function renderUI() {
+      const totalRaised = calculateTotal();
+      const count = appState.contributors.length;
+      const percentage = Math.min(100, Math.round((totalRaised / GOAL_AMOUNT) * 100));
+
+      // Update Amount
+      document.getElementById('currentAmountDisplay').innerText = formatNaira(totalRaised);
+      document.getElementById('contributorCountDisplay').innerText = count;
+      document.getElementById('percentBadge').innerText = percentage + '%';
+
+      // Update Bar Width
+      document.getElementById('progressBar').style.width = percentage + '%';
+
+      // Render Wall of Blessings
+      const listEl = document.getElementById('contributorsList');
+      if (appState.contributors.length === 0) {
+        listEl.innerHTML = `
+          <div class="text-center py-6 text-slate-500 text-xs">
+            Be the first loved one to sow a harvest blessing into Manifest's laptop fund!
+          </div>
+        `;
+      } else {
+        listEl.innerHTML = appState.contributors.map(item => `
+          <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 transition hover:border-slate-600">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-sm text-white">${escapeHtml(item.name)}</span>
+                <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-700 text-amber-300 border border-slate-600">
+                  ${escapeHtml(item.relation || 'Loved One')}
+                </span>
+                <span class="text-[11px] text-slate-500 ml-auto sm:ml-0">${escapeHtml(item.date || 'Recent')}</span>
+              </div>
+              ${item.note ? `<p class="text-xs text-slate-300 italic">"${escapeHtml(item.note)}"</p>` : ''}
+            </div>
+            <div class="font-mono font-bold text-sm text-emerald-400 self-start sm:self-center shrink-0">
+              +${formatNaira(item.amount)}
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Re-initialize Lucide Icons for newly injected elements
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    }
+
+    // Escape HTML to prevent injection
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    // Copy Account Number with Feedback Toast
+    function copyAccountNumber() {
+      const acct = "3050550518";
+      navigator.clipboard.writeText(acct).then(() => {
+        showToast("First Bank: 3050550518 Copied to Clipboard!");
+        
+        // Temporarily change button label
+        const btnText = document.getElementById('copyBtnText');
+        const originalText = btnText.innerText;
+        btnText.innerText = "Copied!";
+        document.getElementById('copyBtn').classList.add('bg-emerald-500/30', 'text-emerald-300', 'border-emerald-500');
+
+        setTimeout(() => {
+          btnText.innerText = originalText;
+          document.getElementById('copyBtn').classList.remove('bg-emerald-500/30', 'text-emerald-300', 'border-emerald-500');
+        }, 2000);
+      }).catch(() => {
+        showToast("First Bank: 3050550518 (Manifest Subeno)");
+      });
+    }
+
+    // Toast Notification
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastMessage').innerText = message;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }
+
+    // Modal Handlers
+    function openContributeModal() {
+      document.getElementById('contributeModal').classList.remove('hidden');
+    }
+
+    function closeContributeModal() {
+      document.getElementById('contributeModal').classList.add('hidden');
+    }
+
+    function selectPreset(amount) {
+      document.getElementById('contributorAmount').value = amount;
+    }
+
+    // Attestation Form Submission
+    function handleAttestationSubmit(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('contributorName').value.trim();
+      const relation = document.getElementById('relationshipType').value;
+      const amount = Number(document.getElementById('contributorAmount').value);
+      const note = document.getElementById('contributorNote').value.trim();
+
+      if (!name || isNaN(amount) || amount <= 0) {
+        alert("Please provide a valid name and amount.");
+        return;
+      }
+
+      // Add to state
+      const newEntry = {
+        name: name,
+        relation: relation,
+        amount: amount,
+        note: note,
+        date: "Just now"
+      };
+
+      appState.contributors.unshift(newEntry);
+      
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+      } catch(e) {}
+
+      // Close modal
+      closeContributeModal();
+      document.getElementById('attestationForm').reset();
+
+      // Rerender UI
+      renderUI();
+
+      // Confetti Explosion
+      if (window.confetti) {
+        confetti({
+          particleCount: 120,
+          spread: 80,
+          origin: { y: 0.6 }
+        });
+      }
+
+      showToast(`Blessing recorded! Total updated by ${formatNaira(amount)}.`);
+
+      // Open WhatsApp to notify Manifest directly
+      const greetingNote = note ? ` "${note}"` : "";
+      const waText = encodeURIComponent(
+        `Hello Manifest! I have just made a contribution of ${formatNaira(amount)} toward your laptop fund.${greetingNote} Keep making us proud in your studies and coding! - ${name} (${relation})`
+      );
+      const waUrl = `https://wa.me/${MANIFEST_PHONE}?text=${waText}`;
+
+      // Open in new tab after tiny delay so user sees confetti
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+      }, 1200);
+    }
+
+    // Close modal on Escape key or clicking outside
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeContributeModal();
+    });
+
+    document.getElementById('contributeModal').addEventListener('click', (e) => {
+      if (e.target.id === 'contributeModal') closeContributeModal();
+    });
+
+    // Initial Render
+    document.addEventListener('DOMContentLoaded', () => {
+      renderUI();
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>
